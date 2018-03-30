@@ -1,0 +1,9 @@
+
+<p>Posts will go here: </p>
+{{outlet}}
+
+<div class="postings">
+    {{#each model as |post|}}
+        {{post.title}}
+    {{/each}}
+</div>
