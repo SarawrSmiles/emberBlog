@@ -1,13 +1,8 @@
-{{outlet}}
-
-<p>test</p>
-
-
 <div class="post">
     {{#each model as |row|}}
         <h4>{{row.title}}</h4>
         {{#each row.body as |row|}}
-            <div class='blog-content'>
+            <div class='row'>
             {{#each row as |col|}}
                 <div class='col'>
                     {{#if col.image}}
@@ -22,3 +17,5 @@
         {{/each}}
     {{/each}}
 </div>
+
+<div>View more posts</div>

@@ -1,9 +1,13 @@
-
-<p>Posts will go here: </p>
-{{outlet}}
+<div class="posts">
+    {{outlet}}
+</div>
 
 <div class="postings">
     {{#each model as |post|}}
-        {{post.title}}
+        {{#link-to "blog.post" post.id}} 
+            <div class="posting">
+                {{post.title}}
+            </div>
+        {{/link-to}}
     {{/each}}
 </div>

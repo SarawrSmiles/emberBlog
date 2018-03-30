@@ -1,7 +1,61 @@
+@font-face {
+  font-family: "Champagne";
+  src: url("../fonts/Champagne-Script.woff") format("opentype"); }
 body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #FFB6C1; }
+  color: #FFB6C1;
+  font-family: "Champagne"; }
+
+.content {
+  position: absolute;
+  left: 0; }
+
+.postings {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .postings .posting {
+    align-items: center;
+    border: 1px solid #a4a4a4;
+    cursor: pointer;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center; }
+  .postings a {
+    text-decoration: none;
+    color: inherit; }
+  .postings a:hover {
+    color: #ff506a; }
+
+.posts {
+  margin-bottom: 30px; }
+  .posts .post {
+    width: 100%; }
+    .posts .post img {
+      max-width: 100%; }
+    .posts .post .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      min-height: 100px; }
+      .posts .post .row .col {
+        display: flex;
+        flex: 1;
+        position: relative;
+        justify-content: center;
+        align-items: center; }
+        .posts .post .row .col p {
+          padding: 30px;
+          font-family: Tahoma;
+          font-size: 16px;
+          text-align: justify; }
 
 /*# sourceMappingURL=app.css.map */
