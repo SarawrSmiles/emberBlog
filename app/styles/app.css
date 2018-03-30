@@ -2,6 +2,7 @@
   font-family: "Champagne";
   src: url("../fonts/Champagne-Script.woff") format("opentype"); }
 body {
+  background: url("../images/shelliemay.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -10,7 +11,8 @@ body {
 
 .content {
   position: absolute;
-  left: 0; }
+  left: 0;
+  top: 200px; }
 
 .postings {
   align-items: flex-start;
@@ -19,6 +21,7 @@ body {
   justify-content: space-around; }
   .postings .posting {
     align-items: center;
+    background: white;
     border: 1px solid #a4a4a4;
     cursor: pointer;
     display: flex;
@@ -35,7 +38,11 @@ body {
     color: #ff506a; }
 
 .posts {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center; }
+  .posts h4 {
+    color: #3e3e3e;
+    font-size: 24px; }
   .posts .post {
     width: 100%; }
     .posts .post img {
@@ -53,6 +60,7 @@ body {
         justify-content: center;
         align-items: center; }
         .posts .post .row .col p {
+          background: white;
           padding: 30px;
           font-family: Tahoma;
           font-size: 16px;
