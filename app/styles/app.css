@@ -9,6 +9,22 @@ body {
   color: #FFB6C1;
   font-family: "Champagne"; }
 
+ul.navigation {
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+  list-style: none; }
+  ul.navigation li {
+    margin: 0;
+    padding: 0; }
+    ul.navigation li a {
+      color: #3e3e3e;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      text-decoration: none; }
+    ul.navigation li a:hover {
+      color: #FFB6C1; }
+
 .content {
   position: absolute;
   left: 0;
@@ -42,8 +58,11 @@ body {
   text-align: center; }
   .posts h4 {
     color: #3e3e3e;
-    font-size: 24px; }
+    font-size: 24px;
+    margin: 0;
+    padding: 15px; }
   .posts .post {
+    background: white;
     width: 100%; }
     .posts .post img {
       max-width: 100%; }
@@ -60,7 +79,6 @@ body {
         justify-content: center;
         align-items: center; }
         .posts .post .row .col p {
-          background: white;
           padding: 30px;
           font-family: Tahoma;
           font-size: 16px;
